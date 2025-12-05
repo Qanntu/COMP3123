@@ -12,7 +12,7 @@ app.get('/hello', (req, res) => {
 //  query string
 app.get('/user', (req, res) => {
   const firstname = req.query.firstname || 'liz';
-  const lastname = req.query.lastname || 'cruz';
+  const lastname = req.query.lastname || 'lastnames';
   res.json({ firstname: firstname, lastname: lastname });
 });
 
